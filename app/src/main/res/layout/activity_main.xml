@@ -23,31 +23,27 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/textViewUrl"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="URL link" />
+        <EditText
+            android:id="@+id/editTextUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="http://www.melody4arab.com/music/egypt/tamer_husni/marina_concert_2010/Come_Back_To_Me_melody4arab.com.mp3"/>
         <Space
             android:layout_width="match_parent"
             android:layout_height="50dp" />
 
         <Button
-            android:id="@+id/buttonRun"
+            android:id="@+id/buttonDownload"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="buRun"
-            android:text="RUN" />
+            android:text="DOWNLOAD" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="50dp" />
-
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:id="@+id/textViewProgress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
